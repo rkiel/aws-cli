@@ -6,8 +6,8 @@ Create the project
 
 ```unix
 cd ~/GitHub/rkiel
-git clone git@github.com:rkiel/aws-starter.git
-cd aws-starter
+git clone git@github.com:rkiel/aws-cli.git
+cd aws-cli
 ```
 
 # AWS Console
@@ -17,7 +17,7 @@ Create a new user
 * click *IAM*
 * click *Users*
 * click *Create New Users*
-* enter `aws-starter`
+* enter `aws-cli`
 
 Generate credentials
 
@@ -28,7 +28,7 @@ Generate credentials
 Grant user permissions
 
 * click *Users*
-* click *aws-starter*
+* click *aws-cli*
 * click *Permissions*
 * click *Attach Policy*
 * click *AdministratorAccess*
@@ -39,8 +39,8 @@ Grant user permissions
 Parse out the AWS credentials
 
 ```unix
-grep aws-starter ~/Downloads/credentials.csv |awk  -F "\"*,\"*" '{print $2}' > aws_access_key_id.txt
-grep aws-starter ~/Downloads/credentials.csv |awk  -F "\"*,\"*" '{print $3}' > aws_secret_access_key.txt
+grep aws-cli ~/Downloads/credentials.csv |awk  -F "\"*,\"*" '{print $2}' > aws_access_key_id.txt
+grep aws-cli ~/Downloads/credentials.csv |awk  -F "\"*,\"*" '{print $3}' > aws_secret_access_key.txt
 ```
 
 Start up vagrant
