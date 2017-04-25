@@ -1,4 +1,4 @@
-## AWS Starter
+## AWS CLI
 
 # OS X
 
